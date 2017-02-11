@@ -1,0 +1,4 @@
+  FileSystemInfo []info = originalDirectory.GetFileSystemInfos();
+                        d_operations.ListDirectoriesAndFiles(info);
+                        Debug.WriteLine("Directories: " + d_operations.directories);
+                        Debug.WriteLine("File: " + d_operations.files);

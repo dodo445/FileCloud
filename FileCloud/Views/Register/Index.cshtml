@@ -1,0 +1,70 @@
+﻿@model FileCloud.Models.UserModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<body>
+    <div class="row valign-wrapper">
+        <div class="col s6 m6" style="text-align:center;margin-left:25%;margin-top:2%">
+            <div class="card light-blue lighten-3">
+                <div class="card-content black-text">
+                    <span class="card-title">Register</span>
+
+                    @using (Html.BeginForm())
+                    {
+                        <fieldset style="background-color:#e1f5fe">
+                            <div class="row">
+                                <div class="input-field col s10">
+                                    @Html.ValidationMessageFor(model => model.username)
+                                    @Html.Label("Enter Your Username", new { style = "color:black"})
+                                    @Html.EditorFor(model => model.username)
+                                </div>
+                            </div>
+                           
+                            <div class="row">
+                                <div class="input-field col s10">
+                                    @Html.ValidationMessageFor(model => model.password)
+                                    @Html.Label("Enter Your Password", new { style = "color:black" })
+                                    @Html.EditorFor(model => model.password)
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s10">
+                                    @Html.Label("Retype Your Password", new { style = "color:black" })
+                                    @Html.Editor("blank")
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s10">
+                                    @Html.ValidationMessageFor(model => model.email)
+                                    @Html.Label("Enter Your Email Adress",new {style = "color:black"})
+                                    @Html.EditorFor(model => model.email)
+                                </div>
+                            </div>
+
+                            <div class="divider"></div>
+                           
+                             <div class="row" style="margin-top:10%">
+                                <div class="col m12">
+                                    <p class="right-align">
+                                        <button class="btn btn-block waves-effect waves-light" type="submit" name="action">
+                                            Sign Up
+                                            <i class="material-icons right">send</i>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+                        </fieldset>
+                    }
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+

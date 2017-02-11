@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FileCloudDatabaseModelStoreContainer" CdmEntityContainer="FileCloudDatabaseEntities">
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="FileCloudDatabaseModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="passHash" ColumnName="passHash" />
+          <ScalarProperty Name="salt" ColumnName="salt" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="File">
+      <EntityTypeMapping TypeName="FileCloudDatabaseModel.File">
+        <MappingFragment StoreEntitySet="File">
+          <ScalarProperty Name="lastNodeID" ColumnName="lastNodeID" />
+          <ScalarProperty Name="modifydate" ColumnName="modifydate" />
+          <ScalarProperty Name="isDirectory" ColumnName="isDirectory" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="parentId" ColumnName="parentId" />
+          <ScalarProperty Name="fileID" ColumnName="fileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

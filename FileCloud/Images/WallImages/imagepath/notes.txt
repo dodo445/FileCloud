@@ -1,0 +1,11 @@
+http://www.codeproject.com/Articles/986730/Learn-MVC-Project-in-days-Day
+
+http://www.codeproject.com/Articles/1000435/Learn-MVC-Project-in-days-Day
+
+http://www.codeproject.com/Articles/482546/Creating-a-custom-user-login-form-with-NET-Csharp // login
+
+http://www.codeproject.com/Articles/1002109/Learn-MVC-Project-in-days-Day-6 // FILE UPLOAD
+
+https://chsakell.com/2013/05/02/4-basic-ways-to-pass-data-from-controller-to-view-in-asp-net-mvc/  === PASSING PARAMETERS
+
+http://www.codeproject.com/Articles/576514/AplusBeginner-splusTutorialplusonplusVariousplus // PASSİING DATA

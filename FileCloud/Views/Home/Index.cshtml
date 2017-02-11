@@ -1,0 +1,51 @@
+﻿@model FileCloud.Models.UserModel
+@{
+    ViewBag.Title = "Index";
+}
+<body>
+    <h1>@Session["LogedUser"]</h1>
+<div class="row"style="text-align:center">
+    <div class="col s12 m3" style="text-align:center;margin-left:35%;margin-top:1%">
+        <div class="card light-blue lighten-3" style="border-radius:25px;">
+            <div class="card-content black-text">
+                <span class="card-title">Sing In</span>
+                @using (Html.BeginForm())
+                {
+                    <fieldset style="background-color:#e1f5fe">
+                        <div class="row">
+                            <div class="input-field col s10">
+                                <i class="material-icons prefix">account_circle</i>
+                               
+                                @Html.Label("Username", new { length="10" , style = "color:black"})
+                                @Html.TextBoxFor(a => a.username, new { length = "10"})
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s10">
+                                <i class="material-icons prefix">vpn_key</i>
+                                @Html.ValidationMessageFor(model => model.password)
+                                @Html.Label("Password", new { style = "color:black" })
+                                @Html.TextBoxFor(model => model.password, new { length = "10"})
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="row" style="margin-top:10%;">
+                            <div class="col m12">
+                                <p class="right-align">
+                                    <button class="btn btn-block waves-effect waves-light" type="submit" name="action">
+                                        Login
+                                        
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                      </fieldset>
+                }
+            </div>
+            <div class="light-blue lighten-2 card-action">
+                <a>@Html.ActionLink("Register Now!", "Index", "Register",null,new { style="color:black"})</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
